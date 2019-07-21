@@ -13,11 +13,15 @@ module.exports = function runChallenges(check) {
   // Ex 1. Read what's written in the email input
   //       Make the function getEmail() return it
   const getEmail = () => {
+    var email = document.getElementById("email");
+    return email.value;
     // TODO: return the email
   };
 
   // /!\ DO NOT CHANGE THIS LINE - TEST PURPOSES
   const myEmail = getEmail();
+  var newEmail = document.getElementById("email");
+  newEmail.value = "nahid.kazemi@gmail.com";
 
   // Ex 2. Change the content of the email input by writing your own email address
 
@@ -25,11 +29,13 @@ module.exports = function runChallenges(check) {
   // Ex 3. Replace the email hint (next to the input) with 'This is my email now'
   //       The text should be emphasized using a <strong> tag
 
-
-
+  var emailHint = document.getElementById("email-hint");
+  emailHint.innerHTML= "<strong>This is my email now</strong>";
+  
   // Ex 4. Add the .blue CSS class to the th elements
-
-
+  var blue = document.getElementsByTagName("th");
+  blue.className = "blue";
+  console.log(blue);
 
   // Ex 5. Count the number of table body rows there are
   //       Make the function teamCount() return it

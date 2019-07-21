@@ -2,6 +2,8 @@
 // (nothing to write in this file for this step)
 
 const franceElement = () => {
+ var select = document.getElementById("france");
+ return select;
   // TODO 2: select the France list item and return it!
 };
 
